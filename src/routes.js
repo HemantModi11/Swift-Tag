@@ -8,6 +8,7 @@ import PaymentPage from './pages/PaymentPage';
 import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import BalancePage from './pages/BalancePage';
+import RechargePage from './pages/RechargePage';
 import DashboardAppPage from './pages/DashboardAppPage';
 
 // ----------------------------------------------------------------------
@@ -23,6 +24,8 @@ export default function Router() {
         { path: 'user', element: <PaymentPage /> },
         { path: 'products', element: <BalancePage /> },
         { path: 'blog', element: <FinePage /> },
+        { path: 'recharge', element: <RechargePage /> },
+
       ],
     },
     {

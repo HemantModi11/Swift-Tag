@@ -3,9 +3,9 @@ import { useTheme } from '@mui/material/styles';
 import { Grid, Container, Typography } from '@mui/material';
 // sections
 import {
-  AppCurrentVisits,
+  ChatBot,
   AppWebsiteVisits,
-   AppWidgetSummary,
+  AppWidgetSummary,
 } from '../sections/@dashboard/app';
 
 // ----------------------------------------------------------------------
@@ -81,20 +81,8 @@ export default function DashboardAppPage() {
           </Grid>
 
           <Grid item xs={12} md={6} lg={4}>
-            <AppCurrentVisits
+            <ChatBot
               title="Support Chart"
-              chartData={[
-                { label: 'America', value: 4344 },
-                { label: 'Asia', value: 5435 },
-                { label: 'Europe', value: 1443 },
-                { label: 'Africa', value: 4443 },
-              ]}
-              chartColors={[
-                theme.palette.primary.main,
-                theme.palette.info.main,
-                theme.palette.warning.main,
-                theme.palette.error.main,
-              ]}
             />
           </Grid>
         </Grid>
